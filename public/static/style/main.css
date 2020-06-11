@@ -29,6 +29,10 @@ body {
 
 
 /* Text */
+strong {
+    color: #FFFFFF !important;
+}
+
 .is-link {
     color: #CC3535;
 }
