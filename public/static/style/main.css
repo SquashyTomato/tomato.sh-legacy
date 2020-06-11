@@ -1,0 +1,41 @@
+/* Tomato CSS | MIT License | tomato.sh */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Overpass:600,700,900');
+@import url('/static/fa/css/all.min.css');
+
+/* Frameworks */
+@import url('/static/style/bulma.css');
+@import url('/static/style/animate.css');
+
+/* Main */
+html {
+    background: #23272A;
+}
+
+body {
+    font-family: 'Overpass', BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #FFFFFF !important;
+}
+
+.site-content {
+    flex: 1;
+}
+
+
+
+/* Image */
+.has-image-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.is-circle {
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border: 0.2rem solid #FFFFFF;
+}
