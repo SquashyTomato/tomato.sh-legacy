@@ -4,9 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass:600,700,900');
 @import url('/static/fa/css/all.min.css');
 
+
 /* Frameworks */
 @import url('/static/style/bulma.css');
 @import url('/static/style/animate.css');
+
 
 /* Main */
 html {
@@ -25,6 +27,15 @@ body {
     flex: 1;
 }
 
+
+/* Text */
+.is-link {
+    color: #CC3535;
+}
+
+.is-link:hover {
+    color: #F84040;
+}
 
 
 /* Image */
