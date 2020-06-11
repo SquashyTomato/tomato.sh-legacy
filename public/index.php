@@ -11,6 +11,9 @@ $page = [
     'icon' => ''
 ];
 
+// Require Socials List
+require_once($root . '/data/socials.php');
+
 // Require Head & Nav Templates
 require_once($root . '/includes/head.php');
 require_once($root . '/includes/nav.php');
@@ -25,11 +28,9 @@ require_once($root . '/includes/nav.php');
                         <h2 class="subtitle has-text-white"><span class="typed"></span></h2>
                         <h4 class="is-size-4">
                             <span class="is-inline">
-                                <a href="/go?twitter" class="is-link" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="/go?twitch" class="is-link" target="_blank"><i class="fab fa-twitch"></i></a>
-                                <a href="/go?discord" class="is-link" target="_blank"><i class="fab fa-discord"></i></a>
-                                <a href="/go?osu" class="is-link" target="_blank"><i class="fac fa-osu"></i></a>
-                                <a href="/go?git" class="is-link" target="_blank"><i class="fab fa-git-alt"></i></a>
+<?php foreach ($socials as $key => $social) { ?>
+                                <a href="<?=$social['link']?>" class="is-link" target="_blank"><i class="<?=$social['icon']?>"></i></a>
+<?php } ?>
                             </span>
                         </h4>
                     </div>
