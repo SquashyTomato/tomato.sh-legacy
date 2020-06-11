@@ -2,16 +2,18 @@
 // Require Preloader
 require_once($_SERVER['DOCUMENT_ROOT'] . '/../resources/preload.php');
 
-// Check if GET Request
+// Check If GET Request
 if (!($_GET)) {
     header("HTTP/1.1 301 Moved Permanently");
     header('Location: /');
     die();
 }
 
+// Require Go Links
+require_once($root . '/data/go.php');
+
 // Variables
 $direct = key($_GET);
-$go = $cfg['go'];
 
 // Loop Through Go Links
 if (isset($go[$direct])) {
